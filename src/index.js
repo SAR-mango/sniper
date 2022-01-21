@@ -57,7 +57,7 @@ client.on ("messageCreate", async (message) => {
 	if (message.content.toLowerCase () === "s") {
 		const snipe = snipes [snipesChannelId];
 		if (!snipe) {
-            message.reply ("There's nothing to f!cking snipe!");
+            message.reply ("There's nothing to snipe!");
             return;
         }
 		const embed = new MessageEmbed ()
@@ -72,7 +72,7 @@ client.on ("messageCreate", async (message) => {
 	if (message.content.toLowerCase () === "es") {
 		const editSnipe = editSnipes [editSnipesChannelId];
 		if (!editSnipe) {
-            message.reply ("There's nothing to f!cking editsnipe!");
+            message.reply ("There's nothing to editsnipe!");
             return;
         }
 		const embed = new MessageEmbed ()
