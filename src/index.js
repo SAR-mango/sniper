@@ -84,6 +84,20 @@ client.on("messageCreate", async(message) => {
 		message.reply({embeds: [embed]});
         editSnipes[editSnipesChannelId] = 0;
     }
+    if (message.reference && message.content.toLowerCase() === "mock" && message.author.id != "928156167652393000") {
+        repliedMessage = await message.fetchReference();
+        newMessage = "";
+        for (let i = 0; i < repliedMessage.content.length; i++) {
+            if (i % 2 === 0) {
+                newMessage += repliedMessage.content[i].toLowerCase();
+            }
+            else {
+                newMessage += repliedMessage.content[i].toUpperCase();
+            }
+        }
+        newMessage += " :nerd:";
+        message.reply(newMessage);
+    }
 });
 
 client.login (token);
