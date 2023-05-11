@@ -33,7 +33,7 @@ client.on("messageDelete", async(message) => {
     snipesChannelId = message.channel.id;
     snipesChannelName = message.channel.name;
     console.log("---DELETION---");
-    console.log(snipes [message.channel.id]);
+    console.log(snipes[message.channel.id]);
     console.log("--------------");
 });
 
@@ -65,7 +65,7 @@ client.on("messageCreate", async(message) => {
 			.setFooter(snipesChannelName)
 			.setTimestamp(snipe.createdAt);
 		if (snipe.content) embed.setDescription(snipe.content);
-		if (snipe.attachments.length) embed.setImage(snipe.attachments [0]);
+		if (snipe.attachments.length) embed.setImage(snipe.attachments[0]);
 		message.reply({embeds: [embed]});
         snipes[snipesChannelId] = 0;
     }
