@@ -88,7 +88,7 @@ client.on("messageCreate", async(message) => {
 		message.reply({embeds: [embed]});
         editSnipes[editSnipesChannelId] = 0;
     }
-    if (message.reference && message.content.toLowerCase() === "mock" && message.author.id != "928156167652393000") {
+    if (message.reference && message.content.toLowerCase() === "mock" && message.author.id != "ADD APPLICATION ID HERE") {
         repliedMessage = await message.fetchReference();
         newMessage = "";
         for (let i = 0; i < repliedMessage.content.length; i++) {
