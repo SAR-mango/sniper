@@ -40,7 +40,7 @@ npm i
 npm run register GUILD ID
 ```
 
-7. Run the bot.
+8. Run the bot.
 
 ``npm run bot``
 
