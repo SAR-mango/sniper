@@ -42,7 +42,17 @@ If there are no errors, the bot should now show up as online in your Discord ser
 
 To keep the bot running even after you close the terminal on your server, use ``screen``. CTRL + C to exit the program, then type ``screen npm run bot``. After the bot is running, press CTRL + A, then D to detach the process. You can now close the terminal; the bot will continue running.
 
-If you ever need to stop the bot or look at its console log, type ``screen -ls`` and note the PID number next to the bot process. Then type ``screen -r PID``, replacing ``PID`` with the number you found.
+If you ever need to stop the bot or look at its console log, type ``screen -ls`` and note the PID number next to the bot process. Then type ``screen -r PID``, replacing ``PID`` with the number you found. Example:
+
+```
+server% screen -ls
+There is a screen on:
+	79708.pts-0.server	(07/01/23 01:14:16)	(Detached)
+1 Socket in /run/screen/S-ubuntu.
+server% screen -r 79708
+```
+
+Note that all of this must be done in the bot's directory, ``sniper/``.
 
 # Usage
 Any server member with permission to send messages can use the bot by sending the following. These are not case sensitive; capital letters will work as well as lowercase.
@@ -53,7 +63,7 @@ Any server member with permission to send messages can use the bot by sending th
 
 **Mock**: reply "mock" to the message you want to mock.
 
-After the bot snipes or editsnipes a given message *once*, it will be wiped from the bot's memory.
+After the bot snipes or editsnipes a given message *once*, it will be wiped from the bot's memory. However, it will be printed in the bot's console log.
 
 Finally, if you have any questions or need help setting up the bot, let me know! esampat@ucsb.edu
 
