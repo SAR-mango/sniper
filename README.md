@@ -7,7 +7,7 @@ Note that "Discord server" and just "server" mean different things. "Discord ser
 
 # Setup
 1. Follow [this tutorial](https://discordpy.readthedocs.io/en/stable/discord.html) to set up a Discord Developer account and add the bot to your Discord server. *Make sure you give the bot Admin permissions.* For the bot's profile picture (which you can change in the Discord Developer Portal), you can use the ``sniper-icon.png`` file included in this repository, or any other image you want.
-2. Once the bot is in your Discord server, it will show up as offline. This is because you need to set up a server that runs the code for the bot. You can do this with a Raspberry Pi, AWS or Oracle server, or any other device running a Debian-based operating system like Ubuntu or Raspbian. When you have set this up and have access to the terminal, proceed to the next step.
+2. Once the bot is in your Discord server, it will show up as offline. This is because you need to set up a server that runs the code for the bot. You can do this with a Raspberry Pi, AWS or [Oracle Always Free](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) server, or any other device running a Debian-based operating system like Ubuntu or Raspbian. When you have set this up and have access to the terminal, proceed to the next step.
 3. Node.js 16.6.0 or newer is required. Follow [this tutorial](https://lindevs.com/install-node-js-and-npm-on-raspberry-pi/) if you need to install it or if you have an older version installed.
 4. Once you have Node.js 16.6.0 working, clone this repository and go into its directory.
 
@@ -25,7 +25,7 @@ cd sniper/
 }
 ```
 
-***Do NOT share your token with anyone or allow it to end up online!*** With the token, a hacker can make your bot do whatever they want, which could lead to your server being fully compromised. As long as your token is safe, only the server that you set up will have access to any content in your Discord server.
+*Do NOT share your token with anyone or allow it to end up online!* With the token, a hacker can make your bot do whatever they want, which could lead to your server being fully compromised. As long as your token is safe, only the server that you set up will have access to any content in your Discord server.
 
 6. Register the bot. Replace "GUILD ID" with the ID of your server, which can be found in Server Settings > Widget.
 
@@ -34,7 +34,7 @@ npm i
 npm run register GUILD ID
 ```
 
-8. Run the bot.
+7. Run the bot.
 
 ``npm run bot``
 
