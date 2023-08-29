@@ -10,7 +10,7 @@ const client = new Client({
 	],
 	partials:["MESSAGE", "USER"],
 });
-const {token} = require("../config.json");
+const {token, application_id} = require("../config.json");
 
 const snipes = {};
 var snipesChannelId = {};
@@ -88,7 +88,7 @@ client.on("messageCreate", async(message) => {
 		message.reply({embeds: [embed]});
         editSnipes[editSnipesChannelId] = 0;
     }
-    if (message.reference && message.content.toLowerCase() === "mock" && message.author.id != "ADD APPLICATION ID HERE") {
+    if (message.reference && message.content.toLowerCase() === "mock" && message.author.id != application_id) {
         repliedMessage = await message.fetchReference();
         newMessage = "";
         for (let i = 0; i < repliedMessage.content.length; i++) {
