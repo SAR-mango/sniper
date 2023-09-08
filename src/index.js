@@ -1,6 +1,6 @@
 // Snipe bot source
-// Originally from DankMemer/Sniper, but most of the code has been changed
-// Last revised May 2023; added mock feature
+// Originally from DankMemer/Sniper, but thoroughly revised
+// Last revised September 2023
 
 const {Client, Intents, MessageEmbed} = require("discord.js");
 const client = new Client({

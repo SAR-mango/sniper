@@ -8,7 +8,7 @@ Note that "Discord server" and just "server" mean different things. "Discord ser
 # Setup
 1. Follow [this tutorial](https://discordpy.readthedocs.io/en/stable/discord.html) to set up a Discord Developer account and add the bot to your Discord server. *Make sure you give the bot Admin permissions.* For the bot's profile picture (which you can change in the Discord Developer Portal), you can use the ``sniper-icon.png`` file included in this repository, or any other image you want.
 2. Once the bot is in your Discord server, it will show up as offline. This is because you need to set up a server that runs the code for the bot. You can do this with a Raspberry Pi, AWS or [Oracle Always Free](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) server, or any other device running a Debian-based operating system like Ubuntu or Raspbian. When you have set this up and have access to the terminal, proceed to the next step.
-3. Node.js 16.6.0 or newer is required. Follow [this tutorial](https://lindevs.com/install-node-js-and-npm-on-raspberry-pi/) if you need to install it or if you have an older version installed.
+3. Node.js 16.6.0 or later is required. Follow [this tutorial](https://lindevs.com/install-node-js-and-npm-on-raspberry-pi/) if you need to install it or if you have an older version installed.
 4. Once you have Node.js 16.6.0 working, clone this repository and go into its directory.
 
 ```
